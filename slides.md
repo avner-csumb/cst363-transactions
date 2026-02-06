@@ -997,6 +997,8 @@ ANSI* vs PostgreSQL semantics<br>
 
 <div class="p-5">
 
+<v-clicks>
+
 - **ACID properties** ensure correctness: Atomicity, Consistency, Isolation, Durability
 - Schedules represent the order of operations across transactions
     - Conflict serializable if precedence graph has no cycles
@@ -1004,5 +1006,7 @@ ANSI* vs PostgreSQL semantics<br>
   - Strict 2PL (locking: shared & exclusive)
 - Deadlocks can occur under locking → PostgreSQL detects and breaks them via waits-for graph
 - SELECT FOR UPDATE locks rows explicitly to prevent anomalies
+
+</v-clicks>
 
 </div>
